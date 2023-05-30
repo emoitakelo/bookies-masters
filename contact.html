@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookies Masters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer-grid">
+      <header>
+        <div class="left-header">
+          <i class="fas fa-bars" onclick="toogleNav()"></i>
+          <h2 id="master">Bookies masters</h2>
+        </div>
+        <div class="right-header">
+          <div class="header-link">
+            <a id="log" href="login.php">Login</a>
+          </div>
+          <div class="header-link">
+            <a id="reg" href="register.html">Register</a>
+          </div>
+        </div>
+      </header>
+      <nav class="hide-nav">
+        <div class="nav-link">
+          <a class="find" href="home.html">Home</a>
+        </div>
+        <div class="nav-link">
+          <a class="find" href="about.html">About</a>
+        </div>
+        <div class="nav-link">
+          <a class="find" href="contact.html">Contact</a>
+        </div>
+      </nav>
+      <div class="inner-grid">
+        <main>
+          <div class="contact">
+            <h3>Contact information</h3>
+            <p>Whatsapp: <a href="#">0105597782</a></p>
+            <p>Phone: <a href="#">0745676267</a></p>
+          </div>
+        </main>
+        <aside>
+          <div class="sidebar">
+            <h4>More predictions</h4>
+            <a class="more" href="wins.html">1x2</a>
+            <a class="more" href="goal.html">Btts</a>
+
+            <a class="more" href="over.html">Ov25</a>
+
+            <a class="more" href="Under.html">Un35</a>
+          </div>
+        </aside>
+        <footer>
+          <b>Created by:</b> <a id="moha" href="contact.html"> Moha</a>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

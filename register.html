@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookies Masters</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <script
+      src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"
+      defer
+    ></script>
+    <script src="validation.js" defer></script>
+  </head>
+  <body>
+    
+    <div class="outer-grid">
+      <header>
+        <div class="left-header">
+          <i class="fas fa-bars" onclick="toogleNav()"></i>
+          <h2 id="master">Bookies masters</h2>
+        </div>
+        <div class="right-header">
+          <div class="header-link">
+            <a id="log" href="login.php">Login</a>
+          </div>
+          <div class="header-link">
+            <a id="reg" href="register.html">Register</a>
+          </div>
+    
+  
+        </div>
+      </header>
+      <nav class="hide-nav">
+        <div class="nav-link">
+          <a class="find" href="home.html">Home</a>
+        </div>
+        <div class="nav-link">
+          <a class="find" href="about.html">About</a>
+        </div>
+        <div class="nav-link">
+          <a class="find" href="contact.html">Contact</a>
+        </div>
+      </nav>
+      <div class="inner-grid">
+        <main>
+          <div class="loginbox">
+            <h4>Registration</h4>
+            <form action="process-signup.php" method="post" id="signup" novalidate>
+              <p>Username</p>
+              <input
+                type="text"
+                id="name"
+                name="username"
+                placeholder="Enter Username"
+              />
+              <p>Email</p>
+              <input type="email" id="email" name="email" placeholder="Enter Email" />
+              <p>Password</p>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+              />
+              <p>Password</p>
+              <input
+                type="password"
+                id="password_confirmation"
+                name="password_confirmation"
+                placeholder="Confirm Password"
+              />
+              <input type="submit" name="submit" value="Register " />
+              <a href="login.php">Already have an account?</a>
+            </form>
+        </main>
+        <aside>
+          <div class="sidebar">
+            <h4>More predictions</h4>
+            <a class="more" href="wins.html">1x2</a>
+            <a class="more" href="goal.html">Btts</a>
+
+            <a class="more" href="over.html">Ov25</a>
+
+            <a class="more" href="Under.html">Un35</a>
+          </div>
+        </aside>
+        <footer>
+          <b>Created by:</b> <a id="moha" href="contact.html"> Moha</a>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
